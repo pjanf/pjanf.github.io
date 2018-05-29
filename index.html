@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Flowplayer quick start</title>
+  <title>Trial Flowplayer</title>
   <!-- Google Tag Manager -->
   <script>
     (function(w, d, s, l, i) {
@@ -120,7 +120,8 @@
         splash: true,
         audioOnly: true,
         clip: {
-          sources: icecastSources
+          sources: icecastSources,
+          title: "first audio"
         }
 
       }).on("ready error", function(e, api, arg) {
@@ -148,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <h2>Iceast stream</h2>
 
-  <div id="icecast" class="fp-playful fp-edgy"></div>
+  <div id="icecast" data-analytics="UA-27182341-1" class="fp-playful fp-edgy"></div>
 
   <p class="doc" id="icecast-info">&nbsp;</p>
 
