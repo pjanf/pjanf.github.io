@@ -2,22 +2,8 @@
 
 <head>
   <title>Trial Flowplayer</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119885899-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-119885899-1');
-  </script>
-
-
   <!-- Google Tag Manager -->
-  <!-- <script>
+  <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -32,7 +18,7 @@
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-KWLX3WZ');
-  </script> -->
+  </script>
   <!-- End Google Tag Manager -->
   <link rel="stylesheet" href="https://releases.flowplayer.org/7.2.6/skin/skin.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -129,6 +115,8 @@
         icecastSources.splice(0, 2);
       }
 
+      var title22 = "abc";
+
       flowplayer(icecastContainer, {
         live: true,
         splash: true,
@@ -136,13 +124,12 @@
         clip: {
           sources: icecastSources,
           title: "first audio"
-        }
+        },
 
       }).on("ready error", function(e, api, arg) {
         document.getElementById("icecast-info").innerHTML = arg.src ?
           ("Now playing: " + arg.src) :
           arg.message;
-
       }).on("progress.android", function(e, api) {
         // *if* Android plays it, it botches up duration initially, overwrite
         if (api.video.time < 4) {
@@ -150,17 +137,36 @@
         } else {
           api.off("progress.android");
         }
+      }).on("finish", function(e, api, clip) {
+        ga('send', 'event', 'audio', 'finish', title22);
+      }).on("ready", function(e, api, arg) {
+        ga('send', 'event', 'audio', 'play', title22);
+      }).on("resume", function(e, api, arg) {
+        ga('send', 'event', 'audio', 'play', title22);
       });
-
     };
+
+
+    setTimeout(
+      function() {
+        var api = flowplayer(document.getElementById("icecast")),
+          currentPos;
+        // get the current position, default to 0
+        currentPos = api.ready ? api.video.time : 0;
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({'event': 'audio','eventDetails.category': 'audio', 'eventDetails.action': 'play', 'eventDetails.label': currentPos});
+      }, 10000
+    );
+
   </script>
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLX3WZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLX3WZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
   <h2>Iceast stream</h2>
 
   <div id="icecast" data-analytics="UA-119885899-1" class="fp-playful fp-edgy"></div>
