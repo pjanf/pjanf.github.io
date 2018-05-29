@@ -153,9 +153,10 @@
           currentPos;
         // get the current position, default to 0
         currentPos = api.ready ? api.video.time : 0;
+        console.log(currentPos);
         window.dataLayer = window.dataLayer || [];
-        dataLayer.push({'event': 'audio','eventDetails.category': 'audio', 'eventDetails.action': 'play', 'eventDetails.label': currentPos});
-      }, 10000
+        dataLayer.push({'event': 'audio','eventDetails.category': 'audio', 'eventDetails.action': 'play', 'eventDetails.value': currentPos});
+      }, 60000
     );
 
   </script>
