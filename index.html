@@ -2,176 +2,81 @@
 
 <head>
   <title>Trial Flowplayer</title>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KWLX3WZ');
-  </script>
-  <!-- End Google Tag Manager -->
-  <link rel="stylesheet" href="https://releases.flowplayer.org/7.2.6/skin/skin.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="https://releases.flowplayer.org/7.2.6/flowplayer.min.js"></script>
-  <link rel="stylesheet" href="//releases.flowplayer.org/audio/flowplayer.audio.css">
-
-  <script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.light.min.js"></script>
-  <script src="//releases.flowplayer.org/audio/flowplayer.audio.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   <style>
-    #mixed {
-      background-color: #036;
-    }
+  .banner {
+  width: 100%;
+  height: 439px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  }
+  .inside{
+    width:60%;
+    height:439px;
+    margin: auto;
+  }
+.bigbanner{
+  position:absolute;
+  top:0;
+  left:15%;
+  width:40%;
+  height:439px;
+}
 
-    /* make cover image fill container width */
+.bigbanner .pic{
+  top:0;
+  left:0;
+  width:auto;
+}
 
-    #mixed.is-audio .fp-player {
-      background-size: cover;
-      /* default: contain */
-      background-position: top center;
-      /* default: center */
-    }
-
-    /* icecast player */
-
-    .flowplayer.is-audio-only {
-      max-width: 400px;
-      background-color: #eee;
-    }
-
-    /* keep this controlbar-only player always at same height */
-
-    .flowplayer.is-audio-only.is-small,
-    .flowplayer.is-audio-only.is-tiny {
-      font-size: 16px;
-    }
+.smallbanner1{
+  position: absolute;
+  right:18.5%;
+  width:24%;
+  height:215px;
+  top: 12.7%;
+}
+.smallbanner2{
+  position: absolute;
+  right:16.4%;
+  width:24%;
+  height:215px;
+  bottom: 4%;
+}
   </style>
 
-  <script>
-    window.onload = function() {
 
-      flowplayer("#mixed", {
-        ratio: 9 / 16,
-        splash: true,
-
-        playlist: [{
-          audio: true,
-          coverImage: "//releases.flowplayer.org/data/national.jpg",
-          sources: [{
-              type: "application/x-mpegurl",
-              src: "//edge.flowplayer.org/fake_empire.m3u8"
-            },
-            {
-              type: "audio/mpeg",
-              src: "//edge.flowplayer.org/fake_empire.mp3"
-            }
-          ]
-        }, {
-          sources: [{
-              type: "application/x-mpegurl",
-              src: "//cdn.flowplayer.org/202777/161579.m3u8"
-            },
-            {
-              type: "video/mp4",
-              src: "//cdn.flowplayer.org/202777/161579.mp4"
-            }
-          ]
-        }]
-
-      });
-
-
-      var icecastContainer = document.getElementById("icecast"),
-        icecastSources = [
-          // native HLS support accepts icecast source
-          {
-            type: "audio/x-mpegurl",
-            engine: "html5",
-            src: "http://live-aacplus-64.kexp.org/kexp64.aac"
-          },
-          {
-            type: "audio/mp4; codecs=mp4a.40.5",
-            src: "http://live-aacplus-64.kexp.org/kexp64.aac"
-          },
-          {
-            type: "video/flash",
-            src: "http://live-aacplus-64.kexp.org/kexp64.aac?type=.flv"
-          }
-        ];
-
-      // icecast streams are not delivered with mime-type
-      // remove HTML5 media sources for IE < 12
-      if (flowplayer.support.browser.msie || navigator.userAgent.indexOf("Trident/7") > -1) {
-        icecastSources.splice(0, 2);
-      }
-
-      var title22 = "abc";
-
-      flowplayer(icecastContainer, {
-        live: true,
-        splash: true,
-        audioOnly: true,
-        clip: {
-          sources: icecastSources,
-          title: "first audio"
-        },
-
-      }).on("ready error", function(e, api, arg) {
-        document.getElementById("icecast-info").innerHTML = arg.src ?
-          ("Now playing: " + arg.src) :
-          arg.message;
-      }).on("progress.android", function(e, api) {
-        // *if* Android plays it, it botches up duration initially, overwrite
-        if (api.video.time < 4) {
-          icecastContainer.querySelector(".fp-duration").innerHTML = "Live";
-        } else {
-          api.off("progress.android");
-        }
-      }).on("finish", function(e, api, clip) {
-        ga('send', 'event', 'audio', 'finish', title22);
-      }).on("ready", function(e, api, arg) {
-        ga('send', 'event', 'audio', 'play', title22);
-      }).on("resume", function(e, api, arg) {
-        ga('send', 'event', 'audio', 'play', title22);
-      });
-    };
-
-
-    setTimeout(
-      function() {
-        var api = flowplayer(document.getElementById("icecast")),
-          currentPos;
-        // get the current position, default to 0
-        currentPos = api.ready ? api.video.time : 0;
-        console.log(currentPos);
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({'event': 'audio','eventDetails.category': 'audio', 'eventDetails.action': 'play', 'eventDetails.value': currentPos});
-      }, 60000
-    );
-
-  </script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLX3WZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <div>
+    Menu
+  </div>
+<div class="banner col-12">
+  <div class="inside">
 
-  <h2>Iceast stream</h2>
+    <div class="bigbanner">
+      <span class="pic">
+        <img src="gambar1.png"/>
+      </span>
+    </div>
+    <div class="smallbanner1">
+      <span class="pic">
+        <img src = "Artboard2.png"/>
+      </span>
+    </div>
 
-  <div id="icecast" data-analytics="UA-119885899-1" class="fp-playful fp-edgy"></div>
+    <div class="smallbanner2">
+      <img src="gambar3.png"/>
+    </div>
+  </div>
+</div>
 
-  <p class="doc" id="icecast-info">&nbsp;</p>
+
 
 </body>
