@@ -1,17 +1,8 @@
 ---
 layout: default
+title: Notes
 ---
 
-
-<head>
-  <title>Trial Flowplayer</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
 
 
 
@@ -21,8 +12,8 @@ layout: default
 <div class="center mw8 mw7-ns mt2">
 
     {% for post in site.categories.notes %}
-    <div class="secondPost bb b--black-10 ph3 ph0-l pv4">
-      <h1 class="tc title f3 avenir"> {{post.title}} </h1>
+    <div class="secondPost bb b--black-10 ph3 ph0-l pv3">
+      <h1 class="tc title f3 avenir mt2"><a href="{{post.url}}" style="color:black" class="dim black"> {{post.title}} </a> </h1>
       <p class="tc f5 avenir">{{post.categories}} - {{ post.date | date: "%-d %B %Y"}}</p>
       <p class="excerpt f5 f5-l lh-copy avenir"> {{post.excerpt}} </p>
       <p> in {{post.tags}} </p>
