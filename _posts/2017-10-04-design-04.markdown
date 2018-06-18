@@ -1,0 +1,18 @@
+---
+layout: posts
+title:  "Statistics Calculator"
+date:   2017-10-04 21:00:00 +0700
+categories: projects
+tags: [design, DailyUI]
+---
+This calculator is meant for calculating sample size for research purposes.
+<br>
+From my personal experience, sometimes I forget the definition of one or more components in the sample size calculator. Therefore, I made one that would give the definition of the component, when the component is clicked. That way, you could just read the description, then fill out the value.
+
+See more on [Behance][behance]!
+
+{:refdef: style="text-align: center;"}
+![overview]({{ "/assets/portfolio/design4.png" | absolute_url }})
+{: refdef}
+
+[behance]: https://www.behance.net/gallery/57410033/Daily-UI-004-Calculator-(Sample-Size)

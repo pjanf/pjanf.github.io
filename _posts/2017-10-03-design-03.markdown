@@ -1,0 +1,17 @@
+---
+layout: posts
+title:  "Landing Page - Yoga Class"
+date:   2017-10-03 21:00:00 +0700
+categories: projects
+tags: [design, DailyUI]
+---
+
+This is the first landing page that I made for a yoga class.
+<br>
+It's meant to be straightforward and gives the information that user usually needs (pricing) upfront. The other information like class schedule and location can be accessed via header.
+
+
+{:refdef: style="text-align: center;"}
+_Le Landing Page_
+![overview]({{ "/assets/portfolio/design3.png" | absolute_url }})
+{: refdef}

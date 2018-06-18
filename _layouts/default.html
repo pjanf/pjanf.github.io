@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tachyons.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+</head>
+
+<body>
+  <header class="bg-white black-80 tc pv4 avenir">
+  <h1 class="mt2 mb0 fw4 f1"> <a class="link black" href="/"> Princess Janf</a></h1>
+  <nav class="bt bb tc mw7 center mt2">
+    <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" id="menu-blog" href="/">Blog</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" id="menu-projects" href="/projects">Projects</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" id="menu-notes" href="/notes">Notes</a>
+  </nav>
+</header>
+
+<!-- <div id="navProjects" class="overlay"> -->
+
+  <!-- Button to close the overlay navigation -->
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+  <!-- Overlay content -->
+  <!-- <div class="overlay-content avenir">
+    <a href="/projects" class="overlay-item">All</a>
+    <a href="/projects" class="overlay-item">Design</a>
+    <a href="/projects" class="overlay-item">Frontends</a>
+    <a href="/projects" class="overlay-item">Backends</a>
+  </div> -->
+
+<!-- </div> -->
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <!-- <footer>
+      <div class="container">
+        <p class="center-text"> <a href="http://cloudcannon.com">Created by CloudCannon</a></p>
+      </div>
+    </footer>  -->
+
+    <script>
+
+    // window.onscroll = function() {myFunction()};
+    //   var header = document.getElementById("fixed-menu");
+    //   var sticky = header.offsetTop;
+    //
+    //   function myFunction() {
+    //     if (window.pageYOffset >= sticky) {
+    //       header.classList.add("sticky");
+    //     } else {
+    //       header.classList.remove("sticky");
+    //     }
+    //   }
+
+      var x = window.location.pathname.split("/")[1];
+      console.log(x);
+      switch(x){
+        case "":
+        $("#menu-blog").addClass("blue");
+        break;
+
+        case "about":
+
+        $("#menu-about").addClass("blue");
+        break;
+
+        case "projects":
+        $("#menu-projects").addClass("blue");
+        break;
+
+        case "notes":
+
+        $("#menu-notes").addClass("blue");
+        break;
+      }
+//       function openNav() {
+//           document.getElementById("navProjects").style.display = "block";
+//       }
+//
+// /* Close when someone clicks on the "x" symbol inside the overlay */
+//       function closeNav() {
+//           document.getElementById("navProjects").style.display = "none";
+//       }
+//       $(".overlay-item").click(function(){
+//         $(this).addClass("white");
+//         }, function(){
+//         $(this).removeClass("white");
+//     });
+//
+
+
+    </script>
+</body>
+
+</html>

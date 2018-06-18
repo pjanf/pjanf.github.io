@@ -1,0 +1,13 @@
+---
+layout: posts
+title:  "Flash Card - Success/ Error When Sending Message"
+date:   2017-11-11 21:00:00 +0700
+categories: projects
+tags: [design, DailyUI]
+---
+
+
+{:refdef: style="text-align: center;"}
+_Flash Card When Sending Message_
+![overview]({{ "/assets/portfolio/design7.png" | absolute_url }})
+{: refdef}

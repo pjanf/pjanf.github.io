@@ -1,0 +1,20 @@
+---
+layout: posts
+title:  "React Native: Maps With Direction From Current Location"
+date:   2017-12-04 21:00:00 +0700
+categories: projects
+tags: react native
+---
+
+
+To be able to create Maps with direction to particular destination from current location, I used [Airbnb’s react-native-maps][maps-airbnb] (for displaying maps), [React Native’s Geolocation][rn-geolocation] (to get device's current location) and [Google Directions API][google-directions] (to get routes to destination).<br>
+
+There are a lot of ways to do this, this is just one of them. If you prefer the [step-by-step tutorial, go visit my Medium][medium-link]!
+
+<script src="https://gist.github.com/princessjanf/681708cb5f815db052c6fb9980ca8769.js"></script>
+
+
+[rn-geolocation]: https://facebook.github.io/react-native/docs/geolocation.html
+[google-directions]: https://developers.google.com/maps/documentation/directions/start
+[maps-airbnb]: https://github.com/react-community/react-native-maps
+[medium-link]: https://medium.com/@princessjanf/react-native-maps-with-direction-from-current-location-ab1a371732c2

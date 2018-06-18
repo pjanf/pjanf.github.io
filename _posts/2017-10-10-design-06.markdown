@@ -1,0 +1,19 @@
+---
+layout: posts
+title:  "Profile & Settings Page"
+date:   2017-10-10 21:00:00 +0700
+categories: projects
+tags: [design, DailyUI]
+---
+
+
+This is a profile page for freelancer website.
+The important information that has to be here is how many jobs that a user had done, how satisfied the previous employer were (incl. Testimonies), and of course the skillset that a user had.
+
+A user might have a lot of skillsets and testimonies, but due to limited space in profile page, a user might want to choose which skillsets and testimonies that he or she wants to show first.
+
+
+{:refdef: style="text-align: center;"}
+_Profile Page (public), Edit Profile (user), Prioritizing Skills (user)_
+![overview]({{ "/assets/portfolio/design6.jpg" | absolute_url }})
+{: refdef}
