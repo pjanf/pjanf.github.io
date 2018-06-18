@@ -1,0 +1,13 @@
+---
+layout: posts
+title:  "Direct Messaging - E-commerce"
+date:   2017-11-11 21:00:00 +0700
+categories: projects
+tags: [DailyUI, design]
+---
+The flow would be, when user hits the chat button in product detail page, they would be directed to the chat page.
+User can then access the list of chats via another menu to see their conversations with the seller.
+{:refdef: style="text-align: center;"}
+_Product Detail, Chat List, Chats_
+![overview]({{ "/assets/portfolio/design8.png" | absolute_url }})
+{: refdef}

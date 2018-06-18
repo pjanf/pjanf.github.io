@@ -1,0 +1,42 @@
+---
+layout: posts
+title:  "Factors That Drive Online Game Player To Come To Event: Indonesia Games Championship 2018 Case Study"
+date:   2018-04-28 21:00:00 +0700
+categories: notes
+tags: survey
+---
+
+This is a summary of my [full article][medium-link].
+
+{:refdef: style="text-align: center;"}
+_Demographic of Survey Participant_
+![overview]({{ "/assets/notes/survey1-4.png" | absolute_url }})
+{: refdef}
+
+Most of the audience come to the event to watch games competition (71%) and hanging out with their friend (57%). As expected, those that watch the competition watched it since they too play the game (100%), they want to see their favorite team (53%), and accompanying their friend/ family to watch (26.67%).
+
+{:refdef: style="text-align: center;"}
+![overview]({{ "/assets/notes/survey1-2.png" | absolute_url }})
+{: refdef}
+
+90.5% of audience would come to similar event, with the following motivations:
+1. Favorite team is participating in the event
+2. Great experience in watching competition
+    - Big screens
+    - Great sound systems (no leak from other stages)
+    - Sufficient seats for audience
+    - Convenient time (weekends)
+    - Convenient place (air conditioned, easy access to public transportation and food)
+{:refdef: style="text-align: center;"}
+  ![overview]({{ "/assets/notes/survey1-3.png" | absolute_url }})
+{: refdef}
+
+
+**Conclusion**
+1. Online game player would come to offline event to watch e-sports competition to feel the ambience of watching it live. Friends or family members are also a big factor to motivate online game player to come to offline event.
+2. Offline game player would watch the competition to learn more about playstle of pro players and to meet their favorite team.
+3. Offline game player would come to an event that can offer great experience in watching competition, that are attended by their favorite teams and KOL, and an event that’s hosted in convenient places at convenient time.
+
+
+
+[medium-link]: https://medium.com/@princessjanf/factors-that-drive-online-game-player-to-come-to-event-indonesia-games-championship-2018-case-bf944703ce52

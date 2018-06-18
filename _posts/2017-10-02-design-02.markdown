@@ -1,0 +1,28 @@
+---
+layout: posts
+title:  "Credit Card Checkout"
+date:   2017-10-02 21:00:00 +0700
+categories: projects
+tags: [design, DailyUI]
+---
+
+There are a few things that I want to highlight in this design.
+1. The card design gives to user on where they can find the card CCV
+2. The page would show the amount the user about to pay clearly, and they can also see the details of what they're buying
+
+
+[See more details in Behance][behance] :D
+
+
+{:refdef: style="text-align: center;"}
+![overview]({{ "/assets/portfolio/design2-1.png" | absolute_url }})
+![transactionDetail]({{ "/assets/portfolio/design2-2.png"| absolute_url }})
+![fontDetail]({{ "/assets/portfolio/design2-3.png" | absolute_url }})
+{: refdef}
+
+
+
+
+
+
+[behance]: https://www.behance.net/gallery/57333253/DailyUI-002-Credit-Card-Checkout

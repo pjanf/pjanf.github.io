@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tachyons.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <header class="bg-white black-80 tc pv4 avenir">
+  <h1 class="mt2 mb0 fw4 f1"> <a class="link black" href="/"> Princess Janf</a></h1>
+  <nav class="bt bb tc mw7 center mt2">
+    <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" href="/">Blog</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" href="/projects">Projects</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" href="/notes">Notes</a>
+  </nav>
+</header>
+
+
+<!-- <div id="navProjects" class="overlay"> -->
+
+  <!-- Button to close the overlay navigation -->
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+  <!-- Overlay content -->
+  <!-- <div class="overlay-content avenir">
+    <a href="/projects" class="overlay-item">All</a>
+    <a href="/projects" class="overlay-item">Design</a>
+    <a href="/projects" class="overlay-item">Frontends</a>
+    <a href="/projects" class="overlay-item">Backends</a>
+  </div> -->
+
+<!-- </div> -->
+
+  <div class="content center mw10 mw7-ns avenir-next pv3">
+    <h1 class='avenir f4 tc ml2 mr2 mb0' style='font-weight:500;' >{{page.title}}</h1>
+    <p class="avenir gray f5 tc mt2"> {{page.categories}} - {{page.date | date: "%-d %B %Y"}} </p>
+
+
+    <div class="mr3 ml3">
+    <div class="mw6 mw7-ns avenir center lh-copy">
+      {{ content }}
+    </div>
+    <p class="avenir gray f5 mt2">  Tags: {{ page.tags | sort | join: ", " }} </p>
+  </div>
+  </div>
+  <!-- <footer>
+      <div class="container">
+        <p class="center-text"> <a href="http://cloudcannon.com">Created by CloudCannon</a></p>
+      </div>
+    </footer>  -->
+
+
+</body>
+
+</html>
