@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120900472-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-120900472-1');
+  </script>
+
+  <meta charset="utf-8">
+  <title> Berani Katakan Tidak </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="tachyons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="textTweener.min.js"></script>
+
+  <style>
+    #section1{
+      background-color: #282424;
+    }
+    #section2{
+      background-color: #B13A3A;
+      height: 100vh;
+    }
+    #section3{
+      background-color: #ffffff;
+      height: 100vh;
+    }
+    #title{
+      color: #B13A3A;
+      font-family: "avenir next condensed";
+    }
+    p{
+      font-family: "avenir next condensed";
+    }
+    button{
+      border-radius: 5px;
+    }
+    .button{
+      font-family: "avenir next condensed";
+    }
+    #thoughts{
+      width:20vw;
+      position: relative;
+    }
+		#thoughts .text {
+			position: absolute;
+		}
+  </style>
+</head>
+
+<body>
+
+  <!-- Model 1
+  <div id="section1" class="vh-100 vw-100 dtc v-mid tc ph3 ph4-l">
+    <h1 id="title" class="f6 f2-m f-subheadline-l fw6 tc">BERANI KATAKAN TIDAK</h1>
+    <p class="white"> Karena kamu berhak untuk menolak melakukan hal yang tidak kamu inginkan </p>
+    <button class="btn-danger"><a class="button"> Minta Bantuan </a></bantuan>
+  </div>
+  <div>
+    <p class="pink"> say shit </p>
+  </div> -->
+
+  <div class="dt mw-100 vh-100">
+    <div id="section1" class="w-80 ph6 pv dt dtc v-mid">
+      <h1 id="title" class="f6 f2-m f-subheadline-l fw6 v-mid" >BERANI KATAKAN TIDAK</h1>
+      <p class="white ml1 f4"> Karena kamu berhak untuk menolak melakukan hal yang tidak kamu inginkan </p>
+      <!-- <button class="btn-danger ml4"><a class="button"> Minta Bantuan </a></bantuan> -->
+    </div>
+    <div id="thoughts" class="w-20 bg-pink dt dtc v-mid ph4 mr5 thoughts">
+    </div>
+  </div>
+  <!-- <div class="dt mw-100 vh-100">
+    <div id="section2" class="w-80 ph6 pv dt dtc v-mid">
+    </div>
+
+  </div> -->
+
+<script>
+  $.get('data.txt', function(data) {
+    var dataArray = data.split(",");
+    console.log(dataArray);
+    var i = 0;
+    var temp = 0;
+    console.log(dataArray.length)
+    for(i=0; i<dataArray.length; ++i){
+      console.log(i);
+      temp = i+1;
+      $("#thoughts").append("<span class='text mr3 f3 avenir' data-textcount='"+temp+"'>"+dataArray[i]+'</span>');
+      console.log("<span class='text mr3' data-textcount='"+temp+"'>"+dataArray[i]+'</span>');
+    }
+    animateText();
+  }, 'text');
+
+  function animateText()
+  {
+    $("#thoughts").TextTweener({
+      duration:"2000"
+    })
+  }
+
+
+</script>
+<!--
+  <section id="section2">
+      asdasd
+  </section>
+  <section id="section3">
+      asdasd
+  </section>
+</body>
+
+</html>
