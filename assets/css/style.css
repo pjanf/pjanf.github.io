@@ -1,3 +1,13 @@
+@font-face{
+  font-family:"Avenir";
+  src: url(/assets/font/AvenirLTStd-Book.otf);
+}
+
+@font-face{
+  font-family:"Avenir Next Condensed";
+  src: url(/assets/font/Avenir-Next-LT-Pro-Condensed_5184.ttf);
+}
+
 .header{
   margin: 0 auto;
   max-width: 320px;

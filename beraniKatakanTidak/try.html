@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="textTweener.min.js"></script>
+	<style>
+	
+	</style>
+</head>
+<body>
+<h1>TextTweener Example</h1>
+<div id="texttween">
+<span class="text">This is a very long sample text with a lot of words and some "1, 2, 3" numbers - to test the function of TextTweener!</span>
+<span class="text">The second text will then be created smoothly with the letters from the first text. Now with special "characters" like 1 2 3 : ? or _ !</span>
+<span class="text">And after that there is a third text to watch the transition again - with some special characters: ? 5 2 9 1 _ !</span>
+<span class="text">If you like, you can change the duration of one text by using the option duration. More features coming soon! 3...2...1...</span>
+<span class="text">One last textblock for the animation test! Testing letters like abc ABC and numbers like 12345. The animation will start again in 3 2 1...</span>
+</div>
+<p>Get TextTweener for jQuery on <a href="https://github.com/Realmaker/textTweener" target="_blank">GitHub</a></p>
+<script>
+
+$("#texttween").TextTweener({
+	duration: "5000"
+});
+
+</script>
+</body>
+</html>
