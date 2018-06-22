@@ -1,0 +1,77 @@
+---
+layout: posts
+title:  "Google Lightning Talks at Cannes - 2018"
+date:   2018-06-22 15:00:00 +0700
+categories: notes
+tags: talks
+---
+
+This is my summary of several talks in [Google Lightning Talks at Cannes 2018][gLightningTalk-link].
+
+**[What does the agency of the future look like][talk11]**
+
+- It's all about making ideas that have never been seen before
+{:refdef: style="text-align: center;"}
+![overview]({{ "/assets/notes/talk1-1.png" | absolute_url }})
+{: refdef}
+- What a good campaign is about
+{:refdef: style="text-align: center;"}
+![overview]({{ "/assets/notes/talk1-2.png" | absolute_url }})
+{: refdef}
+- It's hard to find competent people, one-can-do-it-all kind of people
+- Partners expected more from agency, to create something with impact. One way to figure it out is by working with different verticals to get the experience right.
+- Data & Storytelling: in the end, they're still people. Instead of bombarding people with the data that we have, invite and engage them to talk to us, to participate, to emphasize the campaign.
+
+**[Build brand in the age of assistance][talk12]**
+- Checkout "The Voice Playbook"
+- Persona first
+  - Create a persona on who is going to use the product
+  - Design the voice actions that the persona are likely to use
+- Prototype and Iterate Fast!
+  - See if the voice action that you designed is used by the user or not
+  - See if the tone voice is perfect (it has to align with the brand tone of voice)
+- Focus on utility!
+  - Voice activated meditation for veterans
+  - Estee lauder focus on skincare and reminding about its routine rather than selling its product
+- Trigger emotional responses
+- Google Assistant User Journey is to be a part of:
+  - User getting ready in the morning
+  - User on the go
+  - To help user relax in the evening
+- Don't build a crappy one!
+
+**[Can a classic tale push boundaries & set new standards][talk13]**
+- Make the message clear and simple. Clear and simple message will always get through.
+- Trigger emotion. Rather than spewing and bombarding user with your message, tell only enough to invite them to tell their story, to opt in your product.
+- User engagement is key. When a user is engaged, there's a better chance that they would actively participate as well.
+
+**[Customizing creative by audience][talk23]**
+- To promote make up, cover girl not only target user that has interest in make up, but to all women. Because beauty has been a part of women's daily life.
+- Use 6 seconds advertisement with different creatives and different copy
+- One creative (new job) was found to be most impactful, and the difference in copy didn't make such a significant impact. However for a particular creative (fitness), it's found that the copy that matches the creative (I'm a gym unicorn) to be the most impactful
+- Check out ["Unskippable"][unskippable]
+- **How to use data?**
+  Before even thinking about creative, Covergirl would dig deep into the insights that can be provided with data. Mostly would geek about:
+  - Who is the target?
+  - Why are they the target?
+  - What's the motivation?
+  - What's happening in the culture right now?
+  - How to make it relevant/ What makes it relevant to the target?
+
+**Action Item**
+1. Analytics for voice assistant?
+2. SEO for voice?
+3. Checkout "The Voice Playbook"
+4. Checkout ["Unskippable"][unskippable]
+
+
+
+
+[gLightningTalk-link]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/cannes-2018-livestream/
+[talk11]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/agency-of-the-future/
+[talk12]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/brand-building-age-of-assistance/
+[talk13]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/classics-set-new-standards/
+[talk21]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/successful-youtube-campaigns/
+[talk22]:https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/stereotype-busting-creative/
+[talk23]:https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/customizing-creative-audience/
+[unskippable]: goo.gl/YouTubeCreativeEssentials
