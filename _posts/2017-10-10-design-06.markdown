@@ -4,6 +4,7 @@ title:  "Profile & Settings Page"
 date:   2017-10-10 21:00:00 +0700
 categories: projects
 tags: [design, DailyUI]
+image: "design6.jpg"
 ---
 
 

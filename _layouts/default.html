@@ -22,19 +22,28 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">`
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-  <header class="bg-white black-80 tc pv4 avenir">
+
+
+
+
+<header class="bg-white black-80 tc mt0 avenir w-100 pv3" style="top:0px">
   <h1 class="mt2 mb0 fw4 f1"> <a class="link black" href="/"> Princess Janf</a></h1>
-  <nav class="bt bb tc mw7 center mt2">
+  <div id="navigationBar" class="bg-white black-80 tc mt0 avenir w-100 fixed">
+  <nav class="mw7 center mt0">
     <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" id="menu-blog" href="/">Blog</a>
     <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" id="menu-projects" href="/projects">Projects</a>
     <a class="f6 f5-l link bg-animate black-80 hover-green dib pa3 ph4-l menu" id="menu-notes" href="/notes">Notes</a>
   </nav>
+  </div>
+
 </header>
+
+
 
 <!-- <div id="navProjects" class="overlay"> -->
 
@@ -51,7 +60,7 @@
 
 <!-- </div> -->
 
-  <div class="content">
+  <div class="content mt5">
     {{ content }}
   </div>
 
@@ -96,6 +105,19 @@
         $("#menu-notes").addClass("blue");
         break;
       }
+
+      window.onscroll = function() {
+        if (window.pageYOffset > 0){
+            $("#navigationBar").addClass("topZero");
+        }
+        else{
+          $("#navigationBar").removeClass("topZero");
+        }
+
+      };
+
+
+
 //       function openNav() {
 //           document.getElementById("navProjects").style.display = "block";
 //       }

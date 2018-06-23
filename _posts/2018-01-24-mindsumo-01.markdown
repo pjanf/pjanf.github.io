@@ -4,6 +4,7 @@ title:  "PWA and Personalization To Help Patients Connect With Fellow Patients W
 date:   2017-11-11 21:00:00 +0700
 categories: projects
 tags: [mindsumo, design]
+image: "design9-1.png"
 ---
 
 Joined [Mindsumo's Challenge][mindsumo] for an anonymous company last December - January 2018 and ranked 4th. So sharing my answer here.

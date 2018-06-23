@@ -4,6 +4,7 @@ title:  "Statistics Calculator"
 date:   2017-10-04 21:00:00 +0700
 categories: projects
 tags: [design, DailyUI]
+image: "design4.png"
 ---
 This calculator is meant for calculating sample size for research purposes.
 <br>

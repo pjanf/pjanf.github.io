@@ -8,9 +8,19 @@
   src: url(/assets/font/Avenir-Next-LT-Pro-Condensed_5184.ttf);
 }
 
+
+.type{
+  height:500px;
+  width:400px;
+}
+
 .header{
   margin: 0 auto;
   max-width: 320px;
+}
+
+.topZero{
+  top:0px;
 }
 
 .content{

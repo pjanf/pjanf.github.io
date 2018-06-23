@@ -4,6 +4,7 @@ title:  "Credit Card Checkout"
 date:   2017-10-02 21:00:00 +0700
 categories: projects
 tags: [design, DailyUI]
+image: "design2-1.png"
 ---
 
 There are a few things that I want to highlight in this design.

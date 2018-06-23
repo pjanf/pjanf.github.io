@@ -1,0 +1,73 @@
+---
+layout: default
+title: Princess Janf
+---
+
+
+<body>
+  <div class="cf">
+    {% for post in site.tags.design %}
+    <div class="imgWrapper fl w-25-ns tc pv5">
+      <a href="{{post.url}}" style="background-image: url(/assets/portfolio/{{post.image}});"
+        class="type mw5 dt hide-child br2 cover bg-center center" >
+        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5">
+          {{post.title}}
+        </span>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+
+<script>
+var size = $(window).width();
+var checkWidth = function(){
+  console.log(size);
+
+  if ($(window).width() < 600)
+  {
+    $(".imgWrapper").removeClass("w-25-ns");
+    $(".imgWrapper").removeClass("w-50");
+    $(".imgWrapper").removeClass("w-100");
+    $(".imgWrapper").removeClass("w-30");
+    $(".imgWrapper").addClass("w-100");
+  }
+  else if ($(window).width() < 1100 && $(window).width() > 900)
+  {
+    $(".imgWrapper").removeClass("w-25-ns");
+    $(".imgWrapper").removeClass("w-50");
+    $(".imgWrapper").removeClass("w-100");
+    $(".imgWrapper").removeClass("w-30");
+    $(".imgWrapper").addClass("w-30")
+  }
+  else if ($(window).width() < 900 && $(window).width() > 600)
+  {
+    $(".imgWrapper").removeClass("w-25-ns");
+    $(".imgWrapper").removeClass("w-50");
+    $(".imgWrapper").removeClass("w-100");
+    $(".imgWrapper").removeClass("w-30");
+    $(".imgWrapper").addClass("w-50")
+  }
+  else if ($(window).width() > 1099)
+  {
+    $(".imgWrapper").removeClass("w-25-ns");
+    $(".imgWrapper").removeClass("w-50");
+    $(".imgWrapper").removeClass("w-100");
+    $(".imgWrapper").removeClass("w-30");
+    $(".imgWrapper").addClass("w-25-ns")
+  }
+};
+
+
+
+checkWidth();
+$(window).on('resize', function(){
+  checkWidth();
+});
+
+
+
+
+</script>
+
+</body>

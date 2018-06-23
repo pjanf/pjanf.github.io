@@ -8,7 +8,7 @@ title: Princess Janf
 <body>
   <!-- Model 2 -->
   <div class="line flex flex-row-ns center mw9 mw8-ns mt2 pv4 bb b--black-10 ph3 ph0-l">
-    <div class="main center mw7 mw9-ns">
+    <div class="main center mw7 mw9-ns" id="main">
       {% for post in site.posts %}
       <div class="secondPost bb b--black-10 ph3 ph0-l mb4">
         <h1 class="title f3 avenir black"> <a href="{{post.url}}" style="color:black" class="dim black"> {{post.title}} </a> </h1>
@@ -19,7 +19,7 @@ title: Princess Janf
       {% endfor %}
     </div>
     <div id="supporting" class="ml5">
-      <h1 class="f4 avenir bb b--black-10 ph3 ph0-l mb3"> Portfolios </h1>
+      <h1 class="f4 avenir bb b--black-10 ph3 ph0-l mb3" > <a href="design.html"> Portfolios </a> </h1> 
       {% for post in site.tags.design %}
         <h1 class="title f5 avenir black"> <a href="{{post.url}}" style="color:black" class="dim black"> {{post.title}} </a> </h1>
         <p class="f6 avenir">{{ post.tags | sort | join: ", " }} - {{ post.date | date: "%-d %B %Y"}} </p>

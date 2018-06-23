@@ -4,6 +4,7 @@ title:  "Sign In & Sign Up"
 date:   2017-10-01 21:00:00 +0700
 categories: projects
 tags: [design, DailyUI]
+image: "design1.gif"
 ---
 
 Often times, we mistyped our sign up credentials in the log in form. Therefore, I want to make a design, in which we could easily switch between sign up and log in without losing the same credentials that we have filled in. <br>
