@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="https://pjanf.github.io/trialRadio/try1.rss" rel="self" type="application/rss+xml"/>
-    <title>Princess Janf's Soundcloud</title>
-    <link>http://soundcloud.com/princessjanf</link>
+    <title>Podcast Uno</title>
+    <link>https://pjanf.github.io/princessjanf</link>
     <pubDate>Thu, 28 Jun 2018 02:00:06 +0000</pubDate>
     <lastBuildDate>Thu, 28 Jun 2018 02:00:06 +0000</lastBuildDate>
     <ttl>60</ttl>
@@ -26,20 +26,6 @@
     </image>
     <itunes:category text="Games &amp; Hobbies"/>
     <item>
-      <guid isPermaLink="false">tag:soundcloud,2010:tracks/219350630</guid>
-      <title>Anaconda - Nicki Minaj</title>
-      <pubDate>Sat, 15 Aug 2015 11:14:43 +0000</pubDate>
-      <link>https://soundcloud.com/princessjanf/anaconda-nicki-minaj</link>
-      <itunes:duration>00:01:02</itunes:duration>
-      <itunes:author>Princess Janf</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Anaconda - Nicki Minaj by Princess Janf</itunes:summary>
-      <itunes:subtitle>Anaconda - Nicki Minaj by Princess Janf</itunes:subtitle>
-      <description>Anaconda - Nicki Minaj by Princess Janf</description>
-      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/219350630-princessjanf-anaconda-nicki-minaj.mp3" length="0"/>
-      <itunes:image href="http://i1.sndcdn.com/artworks-000126438654-po5szc-original.png"/>
-    </item>
-    <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/151176046</guid>
       <title>Club Cant Handle Me - Flo Rida Ft David Guetta (Cover)</title>
       <pubDate>Sun, 25 May 2014 10:02:36 +0000</pubDate>
@@ -60,8 +46,8 @@
   <channel>
     <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:23846877/sounds.rss" rel="self" type="application/rss+xml"/>
     <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:23846877/sounds.rss?before=70789135" rel="next" type="application/rss+xml"/>
-    <title>Princess Janf's Soundcloud</title>
-    <link>http://soundcloud.com/princessjanf</link>
+    <title>Podcast Duo</title>
+    <link>https://pjanf.github.io/princessjanf</link>
     <pubDate>Thu, 28 Jun 2018 02:00:06 +0000</pubDate>
     <lastBuildDate>Thu, 28 Jun 2018 02:00:06 +0000</lastBuildDate>
     <ttl>60</ttl>
