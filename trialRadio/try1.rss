@@ -27,6 +27,20 @@
     <itunes:category text="Games &amp; Hobbies"/>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/219350630</guid>
+      <title>Temennya anaconda</title>
+      <pubDate>Sat, 15 Aug 2015 11:14:43 +0000</pubDate>
+      <link>https://soundcloud.com/princessjanf/anaconda-nicki-minaj</link>
+      <itunes:duration>00:01:02</itunes:duration>
+      <itunes:author>Princess Janf</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Anaconda - Nicki Minaj by Princess Janf</itunes:summary>
+      <itunes:subtitle>Anaconda - Nicki Minaj by Princess Janf</itunes:subtitle>
+      <description>Anaconda - Nicki Minaj by Princess Janf</description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/219350630-princessjanf-anaconda-nicki-minaj.mp3" length="0"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-000126438654-po5szc-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/219350630</guid>
       <title>Anaconda - Nicki Minaj</title>
       <pubDate>Sat, 15 Aug 2015 11:14:43 +0000</pubDate>
       <link>https://soundcloud.com/princessjanf/anaconda-nicki-minaj</link>
