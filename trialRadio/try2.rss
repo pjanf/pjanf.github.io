@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:23846877/sounds.rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:23846877/sounds.rss?before=70789135" rel="next" type="application/rss+xml"/>
+    <title>Princess Janf's Soundcloud</title>
+    <link>http://soundcloud.com/princessjanf</link>
+    <pubDate>Thu, 28 Jun 2018 02:00:06 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Jun 2018 02:00:06 +0000</lastBuildDate>
+    <ttl>60</ttl>
+    <language>en</language>
+    <copyright>All rights reserved</copyright>
+    <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
+    <description>Podcast by Princess Janf</description>
+    <itunes:subtitle>Podcast by Princess Janf</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>princessjanf</itunes:name>
+      <itunes:email>feeds@soundcloud.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>Princess Janf</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://i1.sndcdn.com/avatars-000073566154-qhaff1-original.jpg"/>
+    <image>
+      <url>http://i1.sndcdn.com/avatars-000073566154-qhaff1-original.jpg</url>
+      <title>princessjanf</title>
+      <link>http://soundcloud.com/princessjanf</link>
+    </image>
+    <itunes:category text="Games &amp; Hobbies"/>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/142849482</guid>
+      <title>Royals - Lorde Cover</title>
+      <pubDate>Thu, 03 Apr 2014 11:48:40 +0000</pubDate>
+      <link>https://soundcloud.com/princessjanf/royals-lorde-cover</link>
+      <itunes:duration>00:01:38</itunes:duration>
+      <itunes:author>Princess Janf</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>I'm trying new variations with the guitar.</itunes:summary>
+      <itunes:subtitle>I'm trying new variations with the guitar.</itunes:subtitle>
+      <description>I'm trying new variations with the guitar.</description>
+      <enclosure type="audio/x-m4a" url="http://feeds.soundcloud.com/stream/142849482-princessjanf-royals-lorde-cover.m4a" length="809164"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000073566154-qhaff1-original.jpg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/141319308</guid>
+      <title>Roar Cover - Katy Perry</title>
+      <pubDate>Tue, 25 Mar 2014 10:03:06 +0000</pubDate>
+      <link>https://soundcloud.com/princessjanf/roar-cover-katy-perry</link>
+      <itunes:duration>00:02:30</itunes:duration>
+      <itunes:author>Princess Janf</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Roar Cover - Katy Perry by Princess Janf</itunes:summary>
+      <itunes:subtitle>Roar Cover - Katy Perry by Princess Janf</itunes:subtitle>
+      <description>Roar Cover - Katy Perry by Princess Janf</description>
+      <enclosure type="audio/x-m4a" url="http://feeds.soundcloud.com/stream/141319308-princessjanf-roar-cover-katy-perry.m4a" length="1252120"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000073566154-qhaff1-original.jpg"/>
+    </item>
+  </channel>
+</rss>
