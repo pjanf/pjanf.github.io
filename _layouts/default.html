@@ -29,59 +29,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=08a87cc4-5dd8-42e3-821e-0f8800ffc874"> </script>
-  <script>
-var runWidgetLogic = (function() {
-   'use strict';
-   var module = {};
-   module.init = function(HCSearch, chat, contactForm) {
-      if (zE) configureWidget(HCSearch, chat, contactForm);
-      else {
-         console.log("ERROR: No Web Widget running on the page.");
-         return;
-      }
-   };
-   function configureWidget(HCSearch, chat, contactForm) { // API configuration
-      var widgets = { webWidget:{ launcher:{}, helpCenter:{}, chat:{}, contactForm:{} } }, ww = widgets.webWidget;
-      ww.launcher.label = { '*': 'Have a Question?' }; // Web Widget button text
-      ww.launcher.chatLabel = { '*': 'Chat' }; // Chat button text - When the Help Center Search option is disabled
-      ww.helpCenter.chatButton = { '*': 'Chat with a person now' }; // Chat button text - when the Help Center Search option is enabled
-      ww.helpCenter.title = { '*': 'BRAND Help Centre' }; // Web Widget header text
-      if (!HCSearch) ww.helpCenter.suppress = true;
-      if (!chat) ww.chat.suppress = true; else zopimConfig();
-      if (!contactForm) ww.contactForm.suppress = true;
-      window.zESettings = widgets;
-   }
-   function zopimConfig() {
-      zE(function() {
-         $zopim(function() {
-            var zl = $zopim.livechat;
-            zl.setOnConnected(function() {
-               var department_status = zl.departments.getDepartment('Department Name');
-               if (department_status.status == 'offline') zl.setStatus('offline'); // Set the account status to 'offline'
-                else {
-                   zl.setLanguage('en'); // Set language to English:
-                   zl.window.setTitle('BRAND Support'); // Set the Window Title:
-                   zl.addTags("brand_name"); // add a tag
-                   zl.departments.filter(''); // Hide the Drop-down list option in the Pre-Chat Form to select the Department
-                   zl.departments.setVisitorDepartment('Department Name'); // Automatically set the Department
-                }
-            });
-         });
-      });
-   }
-   return module;
-}());
-/**
- * Change the widget settings.
- * @params {boolean} HCSearch - enable HC Search?
- * @params {boolean} chat - enable chat?
- * @params {boolean} contactForm - enable contact form?
- */
-runWidgetLogic.init(true, false, true);
-</script>
-<!-- End of the web widget -->
-
 
 <header class="bg-white black-80 tc mt0 avenir w-100 pv3" style="top:0px">
   <h1 class="mt2 mb0 fw4 f1"> <a class="link black" href="/"> Princess Janf</a></h1>
